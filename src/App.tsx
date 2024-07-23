@@ -1,20 +1,16 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import ExploreTopBooks from './components/HomePages/ExploreTopBooks';
-import Carousel from './components/HomePages/Carousel';
-import Heros from './components/HomePages/Heros';
-import LibraryServices from './components/HomePages/LibraryServices';
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
+import HomePage from './components/homePages/HomePage';
 
 
 function App() {
   return (
     <div className="App" >
       <Navbar />
-      <ExploreTopBooks />
-      <Carousel />
-      <Heros />
-      <LibraryServices />
+      <HomePage />
+      <Footer />
     </div>
   );
 }

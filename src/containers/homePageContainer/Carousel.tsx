@@ -1,5 +1,5 @@
 import React from 'react';
-import ReturnBook from '../../containers/ReturnBook';
+import ReturnBook from './ReturnBook';
 
 const Carousel = () => {
     return (
