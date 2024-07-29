@@ -1,5 +1,6 @@
 import React from 'react'
 import { PiBookOpen } from "react-icons/pi";
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -15,10 +16,10 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className='nav-link' href="/">Home</a>
+                            <NavLink className='nav-link' to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className='nav-link' href="/search">Search Books</a>
+                            <NavLink className='nav-link' to="/search">Search Books</NavLink>
                         </li>
                     </ul>
                     <ul className="navbar-nav ms-auto">
