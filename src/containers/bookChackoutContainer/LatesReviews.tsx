@@ -16,7 +16,7 @@ const LatesReviews: React.FC<{ reviews: ReviewModels[], bookId: number | undefin
                             <Review review={eachReview} key={eachReview.id}></Review>
                         ))}
                         <div className='mb-2'>
-                            <Link type='button' className='btn btn-primary main-color btn-md text-white' to="#">
+                            <Link type='button' className='btn btn-primary main-color btn-md text-white' to={`/reviewList/${props.bookId}`}>
                                 Reach all reviews.
                             </Link>
                         </div>
