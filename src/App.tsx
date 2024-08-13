@@ -13,6 +13,7 @@ import { ReviewListPage } from './containers/bookChackoutContainer/ReviewListPag
 import { ShelfPage } from './components/shelfPage/ShelfPage';
 import SecureRoute from './components/utils/SecureRoute';
 import { MessagesPage } from './components/MessagesPage/MessagesPage';
+import { MenageLibraryPage } from './components/menageLibraryPage/MenageLibraryPage';
 
 const oktaAuth = new OktaAuth(OktaConfig);
 
@@ -41,6 +42,7 @@ function App() {
             <Route path='/login/callback' element={<LoginCallback />} />
             <Route path='/shelf' element={<SecureRoute element={<ShelfPage />} />} />
             <Route path='/messages' element={<SecureRoute element={<MessagesPage />} />} />
+            <Route path='/admin' element={<SecureRoute element={<MenageLibraryPage />} />} />
           </Routes>
         </div>
         <Footer />
