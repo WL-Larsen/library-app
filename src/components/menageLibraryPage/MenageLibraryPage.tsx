@@ -2,6 +2,7 @@ import { useOktaAuth } from '@okta/okta-react'
 import React, { useState } from 'react'
 import { Navigate } from 'react-router-dom';
 import { AdminMessages } from '../../containers/menageLibraryContainer/AdminMessages';
+import { AddNewBook } from '../../containers/menageLibraryContainer/AddNewBook';
 
 export const MenageLibraryPage = () => {
 
@@ -75,7 +76,7 @@ export const MenageLibraryPage = () => {
                         id='nav-add-book'
                         role='tabpanel'
                         aria-labelledby='nav-add-book-tab' >
-                        Add new book
+                        <AddNewBook />
                     </div>
                     <div className='tab-pane fade'
                         id='nav-quantity'
