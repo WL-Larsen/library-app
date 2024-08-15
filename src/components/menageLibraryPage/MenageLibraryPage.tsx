@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Navigate } from 'react-router-dom';
 import { AdminMessages } from '../../containers/menageLibraryContainer/AdminMessages';
 import { AddNewBook } from '../../containers/menageLibraryContainer/AddNewBook';
+import { ChangeQuantityOfBooks } from '../../containers/menageLibraryContainer/ChangeQuantityOfBooks';
 
 export const MenageLibraryPage = () => {
 
@@ -83,7 +84,7 @@ export const MenageLibraryPage = () => {
                         role='tabpanel'
                         aria-labelledby='nav-quantity-tab' >
                         {changeQuantityOfBooksClick ?
-                            <>Change Quantity</>
+                            <ChangeQuantityOfBooks />
                             :
                             <></>
                         }
